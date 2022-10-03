@@ -2,6 +2,42 @@ body {
   background-color: rgb(245, 245, 245);
 }
 
+/*************************************************************************************
+*
+*   index
+*
+**************************************************************************************/
+img {
+  margin-bottom: 2rem;
+}
+
+.my-form {
+  margin-top: 15%;
+  height: 85vh;
+}
+
+.input-g input {
+  width: 800px;
+}
+
+@media only screen and (max-width: 600px) {
+  .my-form {
+    margin-top: 50%;
+    height: 50vh;
+  }
+
+  .input-g input {
+    width: 90%;
+    margin: 0 1rem;
+  }
+}
+
+/*************************************************************************************
+*
+*   result
+*
+**************************************************************************************/
+
 h5 {
   margin: 1rem 0;
 }
@@ -15,4 +51,26 @@ h6 a,
 p {
   color: rgb(104, 104, 104);
   text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .result-container {
+    width: 100%;
+  }
+}
+
+/*************************************************************************************
+*
+*   footer
+*
+**************************************************************************************/
+
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 1rem 0;
+  /* position: relative; */
+  width: 100%;
+  /* bottom: 0; */
+  border-top: 1px solid rgb(195, 195, 195);
 }

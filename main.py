@@ -15,10 +15,6 @@ def home():
         links = results[1]
         texts = results[2]
 
-        print(len(titles))
-        print(len(links))
-        print(len(texts))
-
         loop_length = [len(titles), len(links), len(texts)]
 
         cards = []
@@ -29,12 +25,10 @@ def home():
                 "text":texts[i]
                 })
         
-        print(cards)
-
-        return render_template("index.html", cards=cards)
+        return render_template("results.html", cards=cards, query=query)
 
     return render_template("index.html")
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0")

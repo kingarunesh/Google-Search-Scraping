@@ -1,0 +1,18 @@
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+h5 {
+  margin: 1rem 0;
+}
+
+h5 a {
+  color: blue;
+  text-decoration: none;
+}
+
+h6 a,
+p {
+  color: rgb(104, 104, 104);
+  text-decoration: none;
+}
